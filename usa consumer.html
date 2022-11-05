@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Telephone Lists biz</title>
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <img src="images/icon.png" alt="">
+        <a 
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >Telephone <br> Lists.biz</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar">
+          <form class="d-flex ms-auto my-3 my-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>My Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-globe"></i>Support</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right"></i>Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      tabindex="-1"
+      id="sidebar"
+    >
+      <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html" class="nav-link px-3 active">
+                <span class="me-2"><i class="fa-solid fa-home"></i></span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="nav-link px-3 sidebar-link active"
+                data-bs-toggle="collapse"
+                href="#layouts"
+              >
+                <span class="me-2"><i class="fa-brands fa-searchengin"></i></span>
+                <span>Lead Search</span>
+                <span class="ms-auto">
+                  <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </span>
+              </a>
+              <div class="collapse" id="layouts">
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="usa consumer.html" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-circle"></i
+                      ></span>
+                      <span>USA Consumer Leads</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="usa business.html" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-circle"></i
+                      ></span>
+                      <span>USA Business Leads</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="canada consumer.html" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-circle"></i
+                      ></span>
+                      <span>Canada Consumer Leads</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="canada business.html" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-circle"></i
+                      ></span>
+                      <span>Canada Business Leads</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="faq.html" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-question"></i></span>
+                <span>FAQ</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link px-3 active">
+                <span class="me-2"><i class="fa-solid fa-message"></i></span>
+                <span>Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- offcanvas -->
+
+    <main id="usa_consumer">
+        <div class="part_one">
+            <div class="left_side">
+                <p> 0 <br> lead Search Result</p> 
+                <button class="update">update Count</button> 
+                <button class="restart">Restart</button>
+            </div>
+
+            <div class="right_side">
+                <p> Location: </p>
+            </div>
+        </div> <br>
+<hr> 
+        <div id="part_two">
+          <p><i class="fa-solid fa-globe"></i>CHOOSE A GEOGRAPHIC LOCATION</p>
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">Zip Code</a></h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">Country</a></h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">Area Code</a></h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">City</a></h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">State</a></h5>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+                <h5><a href="#" class="card-link">All USA</a></h5>
+            </div>
+          </div>
+        </div>
+
+<div class="part_three">
+  <label for="country">Country</label>
+  <input type="text"> 
+   <input type="submit" id="submit">
+</div>
+       </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+  <br>
+  <hr> 
+  <footer>
+    <footer>
+      <p>&copy;telephone lists web portfolio.biz</p>
+    </footer>
+  </footer>
+</html>
